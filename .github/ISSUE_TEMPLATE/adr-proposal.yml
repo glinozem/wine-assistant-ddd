@@ -1,0 +1,24 @@
+name: ADR Proposal
+description: Обсуждение архитектурного решения перед фиксацией в /docs/adr
+title: "adr: <кратко>"
+labels: ["type:ADR"]
+body:
+- type: textarea
+id: context
+attributes:
+label: Контекст
+description: Факты, ограничения, альтернативы
+validations:
+required: true
+- type: textarea
+id: decision
+attributes:
+label: Предложенное решение
+- type: textarea
+id: consequences
+attributes:
+label: Последствия (плюсы/минусы)
+- type: textarea
+id: refs
+attributes:
+label: Ссылки (PR/документы)
