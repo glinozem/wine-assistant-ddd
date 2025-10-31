@@ -1,43 +1,25 @@
 name: Feature
-description: Новая функциональность (user story / capability)
-title: "feat: <кратко>"
-labels: ["type:feature", "triage"]
+description: New feature request
+title: "feat: "
+labels:
+  - type:feature
 body:
-- type: textarea
-id: business
-attributes:
-label: Бизнес-контекст
-description: «Как <роль>, я хочу <что>, чтобы <зачем>»
-placeholder: Как менеджер закупок, я хочу загружать прайс-листы...
-validations:
-required: true
-- type: textarea
-id: acceptance
-attributes:
-label: Acceptance criteria (DoD)
-value: |
-- [ ] ...
-- [ ] ...
-validations:
-required: true
-- type: dropdown
-id: context
-attributes:
-label: Ограниченный контекст
-options:
-- Catalog & Pricing
-- Supplier Price ETL
-- 1C Integration
-- Sales/CRM
-- Analytics/BI
-validations:
-required: true
-- type: dropdown
-id: size
-attributes:
-label: Оценка усилий
-options: [S, M, L, XL]
-- type: textarea
-id: tech
-attributes:
-label: Технические заметки / ограничения
+  - type: markdown
+    attributes:
+      value: |
+        Заполните поля ниже.
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      description: "Как <роль>, я хочу <что>, чтобы <зачем>"
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] ...
+    validations:
+      required: true
