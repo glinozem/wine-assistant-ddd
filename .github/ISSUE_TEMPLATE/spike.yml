@@ -1,0 +1,18 @@
+name: Spike (исследование)
+description: Таймбоксированное исследование/прототип
+title: "spike: <кратко>"
+labels: ["type:spike"]
+body:
+- type: input
+id: timebox
+attributes:
+label: Таймбокс (часы)
+placeholder: "4"
+- type: textarea
+id: questions
+attributes:
+label: Исследовательские вопросы
+- type: textarea
+id: outcomes
+attributes:
+label: Ожидаемые артефакты (выводы, PoC, ADR)
