@@ -1,0 +1,21 @@
+name: Task
+description: Техническая/организационная задача
+title: "chore: <кратко>"
+labels: ["type:task"]
+body:
+- type: textarea
+id: description
+attributes:
+label: Описание
+value: |
+Контекст:
+Цель:
+- type: textarea
+id: checklist
+attributes:
+label: Чек-лист выполнения
+value: |
+- [ ] Анализ
+- [ ] Реализация
+- [ ] Тесты
+- [ ] Документация
