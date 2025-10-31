@@ -1,0 +1,33 @@
+name: Bug
+description: Дефект / регрессия
+title: "fix: <кратко>"
+labels: ["type:bug", "triage"]
+body:
+- type: dropdown
+id: severity
+attributes:
+label: Важность
+options: [P0-blocker, P1-high, P2-medium, P3-low]
+default: 1
+- type: textarea
+id: steps
+attributes:
+label: Шаги воспроизведения
+value: |
+1)
+2)
+3)
+validations:
+required: true
+- type: textarea
+id: expected
+attributes:
+label: Ожидаемое поведение
+- type: textarea
+id: actual
+attributes:
+label: Фактическое поведение
+- type: input
+id: env
+attributes:
+label: Окружение (версии, ОС)
